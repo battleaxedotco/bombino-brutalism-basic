@@ -1,9 +1,16 @@
-# bombino-brutalism-basic
-
-## [See a live web demo of this panel here]()
+# <a href="https://www.battleaxe.co/"><img src="https://avatars2.githubusercontent.com/u/60149336?s=200&v=4" width="40" height="40"/></a> bombino-brutalism-basic
 
 | [Installation](#installation) | [Getting Started](#getting-started) | [Features](#features) | [Commands](#commands) | [Contexts](#contexts) | [Use in Browser](#use-in-browser) | [Common Errors](#common-errors) | 
 | ----------------------------- | :---------------------------: | :---------------------------------: | :---------------------: | :-------------------: | :-------------------: | :-------------------: |
+
+<img src="https://github.com/Inventsable/bombino-brutalism-basic/tree/master/src/assets/template.png" width="200"/>
+
+![](./src/assets/template.png)
+
+> Left to right: Illustrator, Browser, After Effects
+
+## [See the live web demo of this panel here](https://xenodochial-knuth-23208d.netlify.app/#/brutalism-basic)
+
 
 ## Installation
 
