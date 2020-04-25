@@ -3,14 +3,11 @@
 | [Installation](#installation) | [Getting Started](#getting-started) | [Features](#features) | [Commands](#commands) | [Contexts](#contexts) | [Use in Browser](#use-in-browser) | [Common Errors](#common-errors) | 
 | ----------------------------- | :---------------------------: | :---------------------------------: | :---------------------: | :-------------------: | :-------------------: | :-------------------: |
 
-<img src="https://github.com/Inventsable/bombino-brutalism-basic/tree/master/src/assets/template.png" width="200"/>
-
 ![](./src/assets/template.png)
 
 > Left to right: Illustrator, Browser, After Effects
 
 ## [See the live web demo of this panel here](https://xenodochial-knuth-23208d.netlify.app/#/brutalism-basic)
-
 
 ## Installation
 
