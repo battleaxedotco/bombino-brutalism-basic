@@ -13,8 +13,8 @@
     "help": "bombino-cmd help"
   },
   "dependencies": {
-    "brutalism": "^1.6.3",
-    "cep-spy": "^1.1.1",
+    "brutalism": "^1.6.9",
+    "cep-spy": "^1.1.4",
     "cluecumber": "0.0.42",
     "core-js": "^3.1.2",
     "lokney": "^1.0.0",

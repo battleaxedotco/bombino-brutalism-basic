@@ -1,9 +1,10 @@
-import Vue from 'vue';
-import App from './App.vue';
+import Vue from "vue";
+import App from "./App.vue";
 
 Vue.config.productionTip = false;
 // Vue.config.devtools = false;
 
+// Brutalism library support
 import {
   Anno,
   Alert,
@@ -28,7 +29,9 @@ import {
   Tabs,
   TextArea,
   Toggle,
-  Wrapper
+  Wrapper,
+  FilePicker,
+  ColorPicker,
 } from "brutalism";
 
 Vue.component("Anno", Anno);
@@ -40,6 +43,8 @@ Vue.component("Divider", Divider);
 Vue.component("Dropdown", Dropdown);
 Vue.component("Dropzone", Dropzone);
 Vue.component("File-Input", FileInput);
+Vue.component("File-Picker", FilePicker);
+Vue.component("Color-Picker", ColorPicker);
 Vue.component("Fold", Fold);
 Vue.component("Footer", Footer);
 Vue.component("Grid", Grid);
@@ -57,5 +62,5 @@ Vue.component("Toggle", Toggle);
 Vue.component("Wrapper", Wrapper);
 
 new Vue({
-  render: h => h(App)
-}).$mount('#app');
+  render: (h) => h(App),
+}).$mount("#app");
