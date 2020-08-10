@@ -4,42 +4,41 @@
       Dynamic menu component reactively handles all flyout and context menus.
       https://github.com/Inventsable/brutalism/tree/master/components/Menus
      -->
-     <Menus
-			refresh
-			:context="[
-				{
-					label: 'Learn more',
-					enabled: false
-				},
+    <Menus
+      refresh
+      debug
+      :context="[
         {
-					label: 'Log menu item with callback',
-					checkable: true,
-					checked: true,
-					callback: checkMenu
-				},
+          label: 'Learn more',
+          enabled: false,
+        },
         {
-					label: 'Test evalScript',
-					callback: runTestScript
-				},
+          label: 'Log menu item with callback',
+          checkable: true,
+          checked: true,
+          callback: checkMenu,
+        },
+        {
+          label: 'Test evalScript',
+          callback: runTestScript,
+        },
         {
           label: 'Supporting infinite nesting!',
           menu: [
             {
               label: 'Hello',
-              menu: [
-                { label: 'World' }
-              ]
-            }
-          ]
-        }
-			]"
-			@contextClick="testClick"
-			:flyout="[
-        {
-          label: 'This flyout menu has a JSON structure!'
-        }
+              menu: [{ label: 'World' }],
+            },
+          ],
+        },
       ]"
-		/>
+      @contextClick="testClick"
+      :flyout="[
+        {
+          label: 'This flyout menu has a JSON structure!',
+        },
+      ]"
+    />
     <!-- 
       Panel is a special wrapper meant for Adobe hosts to handle style, script loading, scrollbars and more.
       For best results always use it as the parent of any content or a router-view.
@@ -50,13 +49,22 @@
         <battleaxe-logo />
         <brutalism-title subtitle="basic" />
         <Button-Group>
-          <Button block goto="https://battleaxe.dev/brutalism-docs/#/">See the docs</Button>
-          <Button block goto="https://github.com/Inventsable/brutalism#-brutalism">See the code</Button>
-          <Button block goto="https://github.com/Inventsable/brutalism/issues/new">Report a bug</Button>
+          <Button block goto="https://battleaxe.dev/brutalism-docs/#/"
+            >See the docs</Button
+          >
+          <Button
+            block
+            goto="https://github.com/Inventsable/brutalism#-brutalism"
+            >See the code</Button
+          >
+          <Button
+            block
+            goto="https://github.com/Inventsable/brutalism/issues/new"
+            >Report a bug</Button
+          >
         </Button-Group>
       </Wrapper>
     </Panel>
-    
   </div>
 </template>
 
@@ -80,18 +88,18 @@
     https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_9.x
 */
 
-import { evalScript } from 'brutalism'
+import { evalScript } from "brutalism";
 export default {
   components: {
-    "battleaxe-logo": require('./components/battleaxeLogo.vue').default,
-    "brutalism-title": require('./components/brutalismTitle.vue').default
+    "battleaxe-logo": require("./components/battleaxeLogo.vue").default,
+    "brutalism-title": require("./components/brutalismTitle.vue").default,
   },
   methods: {
     testClick(item) {
-			console.log("Context menu click:", item);
+      console.log("Context menu click:", item);
     },
     checkMenu(item, index, val) {
-			console.log(item, index, val);
+      console.log(item, index, val);
     },
     // Can invoke any function as await evalScript(`functionName('${parameterVar}')`) if script is preloaded
     // Check out the "script-path" prop of <Panel> component above for easy script file load.
@@ -102,12 +110,11 @@ export default {
           return 'result from JSX file'
         }
         test();
-      `)
-      console.log(result)
+      `);
+      console.log(result);
     },
-  }
+  },
 };
 </script>
 
-<style>
-</style>
+<style></style>

@@ -31,7 +31,7 @@ import {
   TextArea,
   Toggle,
   Wrapper,
-  WrapNode,
+  Watcher,
   FilePicker,
   ColorPicker,
 } from "brutalism";
@@ -62,8 +62,8 @@ Vue.component("Select", Select);
 Vue.component("Tabs", Tabs);
 Vue.component("TextArea", TextArea);
 Vue.component("Toggle", Toggle);
+Vue.component("Watcher", Watcher);
 Vue.component("Wrapper", Wrapper);
-Vue.component("wrap-node", WrapNode);
 
 new Vue({
   render: (h) => h(App),
