@@ -15,7 +15,7 @@
   "dependencies": {
     "brutalism": "latest",
     "cep-spy": "latest",
-    "cluecumber": "latest",
+    "cluecumber": "^0.1.1",
     "core-js": "^3.1.2",
     "starlette": "latest",
     "vue": "^2.6.10"
